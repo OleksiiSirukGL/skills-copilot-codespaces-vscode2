@@ -47,6 +47,8 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
+
+
 // //create a web server
 // const server = http.createServer((req, res) => {
 //   //if the request is a GET request
