@@ -47,11 +47,19 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-//create a web server
-const server = http.createServer((req, res) => {
-  //if the request is a GET request
-  if (req.method === 'GET') {
-    //if the request is to the root URL
-    if (req.url === '/') {
-      //read the index.html file
-      fs.readFile(path.join(__dirname, 'index.html'), (err, data) => {
+// //create a web server
+// const server = http.createServer((req, res) => {
+//   //if the request is a GET request
+//   if (req.method === 'GET') {
+//     //if the request is to the root URL
+//     if (req.url === '/') {
+//       //read the index.html file
+//       fs.readFile(path.join(__dirname, 'index.html'), (err, data) => {
+//         if (err) {
+//           res.writeHead(500, { 'Content-Type': 'text/plain' });
+//           res.end('Internal Server Error');
+//         } else {
+//           res.writeHead(200, { 'Content-Type': 'text/html' });
+//           res.end(data);
+//         }
+//       })}}});
